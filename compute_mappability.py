@@ -57,6 +57,6 @@ except IOError as e:
 
 f = open("map.wig", 'w')
 
-f.write("fixed step chrom=" + mapper.name + " start=1" + "\n")
+f.write("fixedStep  chrom=" + mapper.name + " start=1" + "\n")
 for m in maps:
-  f.write("{0:.2f}".format(m) + " ")
+  f.write("{0:.2f}".format(m) + "\n")
